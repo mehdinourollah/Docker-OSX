@@ -1,0 +1,8 @@
+image:
+  file: .gitpod.Dockerfile
+tasks:
+  - command: sudo docker-up
+  - command: |
+      sleep 5
+      vagrant up --provider=docker
+      docker image ls
